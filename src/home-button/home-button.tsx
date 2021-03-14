@@ -4,10 +4,8 @@ import styles from './home-button.module.css'
 const HomeButton = () => {
 
     return (
-        <button style={{border: 'none', backgroundColor: 'unset'}}>
-            <img
-                // className={styles.imgStyles}
-                // style={{maxWidth: '2rem'}}
+        <button className='border-0 bg-transparent'>
+            <img className='w-8'
                 src={require('./../resources/logo192.png').default}
                 alt='Home Button'/>
         </button>
