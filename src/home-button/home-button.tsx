@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './home-button.module.css'
 
 const HomeButton = () => {
 
