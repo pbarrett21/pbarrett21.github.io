@@ -1,0 +1,15 @@
+.spin {
+  animation: rotate-keyframes 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 200ms;
+}
+
+@keyframes rotate-keyframes {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

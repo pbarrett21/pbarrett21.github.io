@@ -6,10 +6,10 @@ const NavBar = () => {
     return (
         <nav>
             <ol className='flex list-none justify-between'>
-                <li className='m-2'><HomeButton/></li>
+                <li className='m-4'><HomeButton/></li>
                 <span className='flex'>
                 {links.map(link => (
-                    <li className='m-2'>{link}</li>
+                    <li className='m-4 whitespace-nowrap'>{link}</li>
                 ))}
                 </span>
             </ol>
