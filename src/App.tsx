@@ -2,21 +2,41 @@ import React from 'react';
 import './App.css';
 import FadeIn from 'react-fade-in';
 import NavBar from './nav-bar/navbar';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Home from './routes/home/home';
+import Experience from './routes/experience/experience';
+import Projects from './routes/projects/projects';
+import AboutMe from './routes/aboutMe/aboutMe';
 
 function App() {
     return (
         <FadeIn>
-            <NavBar/>
-            <br></br>
-            <h1>Hello World! This site is under construction 🚧</h1>
+            <Router>
+                <NavBar/>
+                <Switch>
+                    <Route exact path="/">
+                        <Home/>
+                    </Route>
+                    <Route exact path="/experience">
+                        <Experience/>
+                    </Route>
+                    <Route exact path="/projects">
+                        <Projects/>
+                    </Route>
+                    <Route exact path="/about">
+                        <AboutMe/>
+                    </Route>
+                </Switch>
+            </Router>
+            <h1 className='pt-12'>Hello World! This site is under construction 🚧</h1>
             {/*<Button onClick={onClickFn} color="secondary">Hello World</Button>*/}
             {/*<HomeButton/>*/}
         </FadeIn>
     );
 }
 
-const onClickFn = () => {
-    console.error('=============>test');
-}
+// const onClickFn = () => {
+//     console.error('=============>test');
+// }
 
 export default App;
