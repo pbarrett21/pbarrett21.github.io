@@ -9,12 +9,12 @@ const NavBar = () => {
         {label: 'About Me', link: 'about'},
     ];
     return (
-        <nav>
+        <nav className='w-full'>
             <ol className='flex list-none justify-between'>
-                <li className='m-4'><HomeButton/></li>
-                <span className='flex'>
+                <li className='m-4 md:ml-0 flex-shrink-0'><HomeButton/></li>
+                <span className='flex ml-auto'>
                 {links.map(link => (
-                    <li key={link.label} className='m-4 whitespace-nowrap'>
+                    <li key={link.label} className='m-4 md:mr-0 ml-8 whitespace-nowrap'>
                         <Link to={link.link}>{link.label}</Link>
                     </li>
                 ))}

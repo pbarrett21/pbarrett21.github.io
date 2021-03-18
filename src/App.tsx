@@ -10,28 +10,30 @@ import AboutMe from './routes/aboutMe/aboutMe';
 
 function App() {
     return (
-        <FadeIn>
-            <Router>
-                <NavBar/>
-                <Switch>
-                    <Route exact path="/">
-                        <Home/>
-                    </Route>
-                    <Route exact path="/experience">
-                        <Experience/>
-                    </Route>
-                    <Route exact path="/projects">
-                        <Projects/>
-                    </Route>
-                    <Route exact path="/about">
-                        <AboutMe/>
-                    </Route>
-                </Switch>
-            </Router>
-            <h1 className='pt-12'>Hello World! This site is under construction 🚧</h1>
-            {/*<Button onClick={onClickFn} color="secondary">Hello World</Button>*/}
-            {/*<HomeButton/>*/}
-        </FadeIn>
+        <div className='max-w-full md:flex md:flex-col md:max-w-2xl lg:max-w-4xl md:m-auto md:items-start'>
+            {/*<FadeIn>*/}
+                <Router>
+                    <NavBar/>
+                    <Switch>
+                        <Route exact path="/">
+                            <Home/>
+                        </Route>
+                        <Route exact path="/experience">
+                            <Experience/>
+                        </Route>
+                        <Route exact path="/projects">
+                            <Projects/>
+                        </Route>
+                        <Route exact path="/about">
+                            <AboutMe/>
+                        </Route>
+                    </Switch>
+                </Router>
+                <h1 className='pt-12'>Hello World! This site is under construction 🚧</h1>
+                {/*<Button onClick={onClickFn} color="secondary">Hello World</Button>*/}
+                {/*<HomeButton/>*/}
+            {/*</FadeIn>*/}
+        </div>
     );
 }
 
