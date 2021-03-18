@@ -14,7 +14,7 @@ const NavBar = () => {
                 <li className='m-4 md:ml-0 flex-shrink-0'><HomeButton/></li>
                 <span className='flex ml-auto'>
                 {links.map(link => (
-                    <li key={link.label} className='m-4 md:mr-0 ml-8 whitespace-nowrap'>
+                    <li key={link.label} className='m-4 md:mr-0 md:ml-8 whitespace-nowrap'>
                         <Link to={link.link}>{link.label}</Link>
                     </li>
                 ))}

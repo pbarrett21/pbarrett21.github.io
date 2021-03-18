@@ -29,7 +29,6 @@ function App() {
                         </Route>
                     </Switch>
                 </Router>
-                <h1 className='pt-12'>Hello World! This site is under construction 🚧</h1>
                 {/*<Button onClick={onClickFn} color="secondary">Hello World</Button>*/}
                 {/*<HomeButton/>*/}
             {/*</FadeIn>*/}
