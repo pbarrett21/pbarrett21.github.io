@@ -1,7 +1,7 @@
 .spin {
-  animation: rotate-keyframes 1s;
+  animation: rotate-keyframes 700ms;
   animation-timing-function: ease-out;
-  animation-delay: 200ms;
+  animation-delay: 100ms;
 }
 
 @keyframes rotate-keyframes {
