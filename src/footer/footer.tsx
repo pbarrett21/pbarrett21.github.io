@@ -12,7 +12,7 @@ const Footer = () => {
         {icon: <InstaIcon/>, link: 'https://www.instagram.com/paulbarr21/'},
     ];
     return (
-        <footer className='flex-shrink-0 m-4 md:w-full'>
+        <footer className='flex-shrink-0 m-4 md:w-19/20'>
             <ol className='flex list-none justify-between'>
                 {links.map(link => (
                     <li>

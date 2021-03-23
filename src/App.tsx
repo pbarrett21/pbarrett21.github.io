@@ -11,7 +11,7 @@ import Footer from './footer/footer';
 
 function App() {
     return (
-        <div className='h-screen max-w-full flex flex-col md:max-w-2xl lg:max-w-2xl md:m-auto md:items-start'>
+        <div className='h-screen overflow-auto hide-scroll max-w-full flex flex-col md:max-w-2xl lg:max-w-2xl md:m-auto md:items-start'>
             {/*<FadeIn>*/}
                 <Router>
                     <div className='flex-foot w-full'>

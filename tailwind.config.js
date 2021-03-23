@@ -11,7 +11,11 @@ module.exports = {
       '2': '2 2 0%',
       'foot': '1 0 auto'
     },
-    extend: {},
+    extend: {
+      width: {
+        '19/20': '95%'
+      },
+    },
   },
   variants: {
     extend: {},
