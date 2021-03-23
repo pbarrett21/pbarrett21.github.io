@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
-import FadeIn from 'react-fade-in';
 import NavBar from './nav-bar/navbar';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from './routes/home/home';
 import Experience from './routes/experience/experience';
 import Projects from './routes/projects/projects';
@@ -11,37 +10,30 @@ import Footer from './footer/footer';
 
 function App() {
     return (
-        <div className='h-screen overflow-auto hide-scroll max-w-full flex flex-col md:max-w-2xl lg:max-w-2xl md:m-auto md:items-start'>
-            {/*<FadeIn>*/}
-                <Router>
-                    <div className='flex-foot w-full'>
-                        <NavBar/>
-                        <Switch>
-                            <Route exact path="/">
-                                <Home/>
-                            </Route>
-                            <Route exact path="/experience">
-                                <Experience/>
-                            </Route>
-                            <Route exact path="/projects">
-                                <Projects/>
-                            </Route>
-                            <Route exact path="/about">
-                                <AboutMe/>
-                            </Route>
-                        </Switch>
-                    </div>
-                    <Footer/>
-                </Router>
-                {/*<Button onClick={onClickFn} color="secondary">Hello World</Button>*/}
-                {/*<HomeButton/>*/}
-            {/*</FadeIn>*/}
+        <div
+            className='h-screen overflow-auto hide-scroll max-w-full flex flex-col md:max-w-2xl lg:max-w-2xl md:m-auto md:items-start'>
+            <Router>
+                <div className='flex-foot w-full'>
+                    <NavBar/>
+                    <Switch>
+                        <Route exact path="/">
+                            <Home/>
+                        </Route>
+                        <Route exact path="/experience">
+                            <Experience/>
+                        </Route>
+                        <Route exact path="/projects">
+                            <Projects/>
+                        </Route>
+                        <Route exact path="/about">
+                            <AboutMe/>
+                        </Route>
+                    </Switch>
+                </div>
+                <Footer/>
+            </Router>
         </div>
     );
 }
-
-// const onClickFn = () => {
-//     console.error('=============>test');
-// }
 
 export default App;
