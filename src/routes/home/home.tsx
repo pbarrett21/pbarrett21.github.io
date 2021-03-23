@@ -14,12 +14,12 @@ const Home = () => {
             <img className='rounded shadow-md'
                  src={require('./../../resources/cup-of-coffee.jpeg').default}
                  alt='macbook and coffee'/>
-            <div className='max-w-prose'>
-                <h1 className='text-xl font-semibold mt-6 mb-6'>Hey there, I'm Paul 👋</h1>
+            <div className='md:flex md:flex-col md:items-center'>
+                <h1 className='text-xl font-semibold mt-6 mb-6 md:ml-auto md:mr-auto'>Hey there, I'm Paul 👋</h1>
                 <h1 className='text-lg font-normal'>I am a software developer dedicated to
                     constant improvement and exploration</h1>
             </div>
-            <button className='flex mt-10' onClick={showExperience}>
+            <button className='flex mt-10 md:ml-auto md:mr-auto' onClick={showExperience}>
                 <span>Check out my experience</span>
                 <svg className='arrow-bounce ml-2' fill="none" height="24" stroke="#000" stroke-linecap="round"
                      stroke-linejoin="round" stroke-width="2"
