@@ -1,6 +1,14 @@
 import React from 'react';
+import './home-styles.css';
+import {useHistory} from "react-router-dom";
 
 const Home = () => {
+    const history = useHistory();
+
+    const showExperience = () => {
+        history.push("/experience");
+    }
+
     return (
         <div className='m-4 '>
             <img className='rounded shadow-md'
@@ -11,6 +19,15 @@ const Home = () => {
                 <h1 className='text-lg font-normal'>I am a software developer dedicated to
                     constant improvement and exploration</h1>
             </div>
+            <button className='flex mt-10' onClick={showExperience}>
+                <span>Check out my experience</span>
+                <svg className='arrow-bounce ml-6' fill="none" height="24" stroke="#000" stroke-linecap="round"
+                     stroke-linejoin="round" stroke-width="2"
+                     viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" x2="20" y1="12" y2="12"/>
+                    <polyline points="14 6 20 12 14 18"/>
+                </svg>
+            </button>
         </div>
     );
 }

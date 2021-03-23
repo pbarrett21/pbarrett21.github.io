@@ -16,7 +16,9 @@ const Footer = () => {
             <ol className='flex list-none justify-between'>
                 {links.map(link => (
                     <li>
-                        <a href={link.link} target='_blank'>{link.icon}</a>
+                        <a href={link.link}
+                           rel="noreferrer"
+                           target='_blank'>{link.icon}</a>
                     </li>
                 ))}
             </ol>

@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <nav className='w-full'>
             <ol className='flex list-none justify-between'>
-                <li className='m-4 md:ml-0 flex-shrink-0'><HomeButton/></li>
+                <li className='m-4 md:ml-0 flex-shrink-0'><HomeButton bounce={false}/></li>
                 <span className='flex ml-auto'>
                 {links.map(link => (
                     <li key={link.label} className='m-4 md:mr-0 md:ml-8 whitespace-nowrap'>
