@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecdc4501.chunk.css",
-    "main.js": "/static/js/main.0274bf3d.chunk.js",
-    "main.js.map": "/static/js/main.0274bf3d.chunk.js.map",
+    "main.css": "/static/css/main.b0789756.chunk.css",
+    "main.js": "/static/js/main.a91f8ea3.chunk.js",
+    "main.js.map": "/static/js/main.a91f8ea3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0f77bb76.js",
     "runtime-main.js.map": "/static/js/runtime-main.0f77bb76.js.map",
     "static/js/2.7a369e76.chunk.js": "/static/js/2.7a369e76.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.ab68debd.chunk.js": "/static/js/3.ab68debd.chunk.js",
     "static/js/3.ab68debd.chunk.js.map": "/static/js/3.ab68debd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ecdc4501.chunk.css.map": "/static/css/main.ecdc4501.chunk.css.map",
+    "static/css/main.b0789756.chunk.css.map": "/static/css/main.b0789756.chunk.css.map",
     "static/js/2.7a369e76.chunk.js.LICENSE.txt": "/static/js/2.7a369e76.chunk.js.LICENSE.txt",
     "static/media/codepen_icon.12c5e842.svg": "/static/media/codepen_icon.12c5e842.svg",
     "static/media/cup-of-coffee.jpeg": "/static/media/cup-of-coffee.271bb6ba.jpeg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.0f77bb76.js",
     "static/js/2.7a369e76.chunk.js",
-    "static/css/main.ecdc4501.chunk.css",
-    "static/js/main.0274bf3d.chunk.js"
+    "static/css/main.b0789756.chunk.css",
+    "static/js/main.a91f8ea3.chunk.js"
   ]
 }
