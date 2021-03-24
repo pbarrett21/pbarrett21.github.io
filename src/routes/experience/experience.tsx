@@ -1,28 +1,26 @@
 import React from 'react';
+import ExperienceCard from '../../experience-card/experienceCard';
 
 const Experience = () => {
     return (
         <div className='m-4'>
-            <img className='m-auto lg:max-w-xl mb-8'
-                 src={require('./../../resources/cvs-health-logo-stacked.png').default}
-                 alt='CVS Health Logo'/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta auctor ipsum, nec euismod enim
-                porta a. Integer ut neque sem. Sed volutpat, justo et vestibulum varius, urna mi tincidunt turpis, vitae
-                viverra mi lorem in metus. Sed interdum at mi et porta. Sed nec risus faucibus, placerat lacus quis,
-                tempor diam. Donec egestas enim vel vulputate tristique. Curabitur fringilla nisi lacinia mauris
-                ultricies auctor. Ut sit amet nunc euismod, fermentum diam vel, blandit nisi. Proin eros lorem, euismod
-                non pellentesque in, congue et massa. Nam hendrerit nulla sed sapien varius, vitae tempor libero
-                ultrices. Donec id risus ut tortor ornare iaculis nec sit amet lorem.</p>
-            <img className='m-auto lg:max-w-xl'
-                 src={require('./../../resources/uk-logo.jpeg').default}
-                 alt='University of Kentucky Logo'/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta auctor ipsum, nec euismod enim
-                porta a. Integer ut neque sem. Sed volutpat, justo et vestibulum varius, urna mi tincidunt turpis, vitae
-                viverra mi lorem in metus. Sed interdum at mi et porta. Sed nec risus faucibus, placerat lacus quis,
-                tempor diam. Donec egestas enim vel vulputate tristique. Curabitur fringilla nisi lacinia mauris
-                ultricies auctor. Ut sit amet nunc euismod, fermentum diam vel, blandit nisi. Proin eros lorem, euismod
-                non pellentesque in, congue et massa. Nam hendrerit nulla sed sapien varius, vitae tempor libero
-                ultrices. Donec id risus ut tortor ornare iaculis nec sit amet lorem.</p>
+            <ExperienceCard cardTitle={'CVS Health'}
+                            imgSrc={require('./../../resources/cvs-health-logo-stacked.png').default}
+                            imgAlt={'CVS Health Logo'}
+                            blurb={'I joined CVS Health in 2019 as a full stack engineer working on renovating ' +
+                            'workflows for PBM by creating modern single page applications.'}
+                            role={'Software Engineer'}
+                            dates={'June 2019 - Present'}
+                            technologies={'Angular, SpringBoot, Typescript, NGRX, AG Grid'}/>
+            <ExperienceCard cardTitle={'University of Kentucky'}
+                            imgSrc={require('./../../resources/uk-logo.jpeg').default}
+                            imgAlt={'University of Kentucky Logo'}
+                            blurb={'I graduated from the University of Kentucky in 2019 with a major in computer science ' +
+                            'and a minor in mathematics. During my time as a student I was able to work on many interesting ' +
+                            'projects and attend the CatHacks hackathon.'}
+                            role={'Student'}
+                            dates={'May 2016 - May 2019'}
+                            technologies={'Angular, Java, C++, Machine Learning, Javascript'}/>
         </div>
     );
 }
