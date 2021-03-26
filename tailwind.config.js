@@ -15,6 +15,9 @@ module.exports = {
       width: {
         '19/20': '95%'
       },
+      top: {
+        '-1': '-1px',
+      }
     },
   },
   variants: {
