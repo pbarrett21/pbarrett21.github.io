@@ -34,8 +34,8 @@ const ExperienceCard = (props: {
             <div className='flex justify-center'>
                 <button className='flex'>
                     <span>Learn More</span>
-                    <svg className='ml-2' fill="none" height="24" stroke="#000" stroke-linecap="round"
-                         stroke-linejoin="round" stroke-width="2"
+                    <svg className='ml-2' fill="none" height="24" stroke="#000" strokeLinecap="round"
+                         strokeLinejoin="round" strokeWidth="2"
                          viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <line x1="4" x2="20" y1="12" y2="12"/>
                         <polyline points="14 6 20 12 14 18"/>

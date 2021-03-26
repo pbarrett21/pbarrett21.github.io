@@ -15,7 +15,7 @@ const HomeButton = (props: { bounce: boolean }) => {
 
     return (
         <button className='border-0 bg-transparent'>
-            <img className={rotate ? 'w-8 spin' : 'w-8'}
+            <img className={rotate ? 'w-8 h-8 spin' : 'h-8 w-8'}
                  onClick={handleClick}
                  onAnimationEnd={() => setRotate(!rotate)}
                  src={require('./../resources/logo192.png').default}
