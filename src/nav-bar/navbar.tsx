@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import HomeButton from '../home-button/home-button';
 import {Link} from 'react-router-dom';
 import {useLocation} from "react-router-dom";
+import './navbar-styles.scss';
 
 const NavBar = () => {
     const location = useLocation();
@@ -22,7 +23,7 @@ const NavBar = () => {
 
     const determineClass = (id: number) => {
         const classInfo = 'm-4 md:ml-8 whitespace-nowrap';
-        return id === activeTab ? classInfo + ' underline' : classInfo
+        return id === activeTab ? classInfo + ' selected-tab' : classInfo
     }
 
     return (
