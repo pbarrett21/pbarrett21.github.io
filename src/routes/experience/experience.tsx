@@ -3,7 +3,7 @@ import ExperienceCard from '../../experience-card/experienceCard';
 
 const Experience = () => {
     return (
-        <div className='m-4'>
+        <div className='max-w-full md:max-w-2xl lg:max-w-2xl m-4'>
             <ExperienceCard cardTitle={'CVS Health'}
                             imgSrc={require('./../../resources/cvs-health-logo-stacked.png').default}
                             imgAlt={'CVS Health Logo'}

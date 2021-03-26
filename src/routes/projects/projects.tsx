@@ -2,7 +2,9 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <h1>Projects</h1>
+        <div className='max-w-full md:max-w-2xl lg:max-w-2xl m-4'>
+            Projects
+        </div>
     );
 }
 

@@ -21,13 +21,14 @@ const NavBar = () => {
     ];
 
     const determineClass = (id: number) => {
-        return id === activeTab ? 'm-4 md:mr-0 md:ml-8 whitespace-nowrap underline' : 'm-4 md:mr-0 md:ml-8 whitespace-nowrap'
+        const classInfo = 'm-4 md:ml-8 whitespace-nowrap';
+        return id === activeTab ? classInfo + ' underline' : classInfo
     }
 
     return (
-        <nav className='w-full sticky top-0'>
-            <ol className='flex list-none justify-between items-center'>
-                <li onClick={() => setActiveTab(0)} className='m-4 md:ml-0 flex-shrink-0'>
+        <nav className='w-full sticky top-0 bg-white'>
+            <ol className='flex list-none justify-between items-center max-w-full md:max-w-2xl lg:max-w-2xl m-auto'>
+                <li onClick={() => setActiveTab(0)} className='m-4 flex-shrink-0'>
                     <HomeButton bounce={false}/>
                 </li>
                 <span className='flex ml-auto'>

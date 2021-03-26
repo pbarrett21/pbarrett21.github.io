@@ -10,7 +10,7 @@ const Home = () => {
     }
 
     return (
-        <div className='m-4 '>
+        <div className='max-w-full md:max-w-2xl lg:max-w-2xl m-4'>
             <img className='rounded shadow-md'
                  src={require('./../../resources/cup-of-coffee.jpeg').default}
                  alt='macbook and coffee'/>

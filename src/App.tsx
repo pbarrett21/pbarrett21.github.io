@@ -11,9 +11,9 @@ import Footer from './footer/footer';
 function App() {
     return (
         <div
-            className='flex flex-col h-screen overflow-auto hide-scroll max-w-full md:max-w-2xl lg:max-w-2xl md:m-auto md:items-start'>
+            className='flex flex-col h-screen overflow-auto hide-scroll md:m-auto md:items-start'>
             <Router>
-                <div className='flex-foot w-full'>
+                <div className='flex flex-col items-center flex-foot w-full'>
                     <NavBar/>
                     <Switch>
                         <Route exact path="/">
