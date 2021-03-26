@@ -14,6 +14,8 @@ const NavBar = () => {
         ['/about', 3],
     ]);
 
+    // set navbar current tab when going to specific route without clicking on navbar
+    // eg going to address bar and typing url/experience
     const [activeTab, setActiveTab] = useState(pathMap.get(location.pathname));
 
     const links = [
@@ -22,11 +24,13 @@ const NavBar = () => {
         {id: 3, label: 'About Me', link: 'about'},
     ];
 
+    // conditionally add underline
     const determineClass = (id: number) => {
         const classInfo = 'm-4 md:ml-8 whitespace-nowrap';
         return id === activeTab ? classInfo + ' selected-tab' : classInfo
     }
 
+    // currently handles history.push route changes like from home page view experience button
     useEffect(() => {
         // equivalent to component mount
         const unlisten = history.listen(location => {
@@ -34,6 +38,7 @@ const NavBar = () => {
         })
         return () => {
             // equivalent to component unmount
+            // unsubscribe from history listen on unmount
             unlisten();
         }
     })
