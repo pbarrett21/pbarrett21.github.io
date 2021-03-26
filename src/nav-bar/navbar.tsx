@@ -8,21 +8,21 @@ const NavBar = () => {
     const location = useLocation();
     const history = useHistory();
 
+    const links = [
+        {id: 1, label: 'Experience', link: 'experience'},
+        {id: 2, label: 'Projects', link: 'projects'},
+        {id: 3, label: 'About Me', link: 'about'},
+    ];
+
     const pathMap = new Map<string, number>([
         ['/experience', 1],
         ['/projects', 2],
         ['/about', 3],
     ]);
 
-    // set navbar current tab when going to specific route without clicking on navbar
+    // set initial navbar current tab when going to specific route without clicking on navbar
     // eg going to address bar and typing url/experience
     const [activeTab, setActiveTab] = useState(pathMap.get(location.pathname));
-
-    const links = [
-        {id: 1, label: 'Experience', link: 'experience'},
-        {id: 2, label: 'Projects', link: 'projects'},
-        {id: 3, label: 'About Me', link: 'about'},
-    ];
 
     // conditionally add underline
     const determineClass = (id: number) => {
@@ -33,8 +33,8 @@ const NavBar = () => {
     // currently handles history.push route changes like from home page view experience button
     useEffect(() => {
         // equivalent to component mount
-        const unlisten = history.listen(location => {
-            setActiveTab(pathMap.get(location.pathname));
+        const unlisten = history.listen(currentLocation => {
+            setActiveTab(pathMap.get(currentLocation.pathname));
         })
         return () => {
             // equivalent to component unmount
