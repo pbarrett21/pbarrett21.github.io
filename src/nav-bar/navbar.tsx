@@ -1,11 +1,12 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import HomeButton from '../home-button/home-button';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import {useLocation} from "react-router-dom";
 import './navbar-styles.scss';
 
 const NavBar = () => {
     const location = useLocation();
+    const history = useHistory();
 
     const pathMap = new Map<string, number>([
         ['/experience', 1],
@@ -25,6 +26,17 @@ const NavBar = () => {
         const classInfo = 'm-4 md:ml-8 whitespace-nowrap';
         return id === activeTab ? classInfo + ' selected-tab' : classInfo
     }
+
+    useEffect(() => {
+        // equivalent to component mount
+        const unlisten = history.listen(location => {
+            setActiveTab(pathMap.get(location.pathname));
+        })
+        return () => {
+            // equivalent to component unmount
+            unlisten();
+        }
+    })
 
     return (
         <nav className='w-full sticky -top-1 bg-white'>
