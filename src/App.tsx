@@ -28,6 +28,12 @@ function App() {
                         <Route exact path="/about">
                             <AboutMe/>
                         </Route>
+                        <Route exact path="/cvs">
+                            <p>test cvs</p>
+                        </Route>
+                        <Route exact path="/uk">
+                            <p>test uk</p>
+                        </Route>
                     </Switch>
                 </div>
                 <Footer/>

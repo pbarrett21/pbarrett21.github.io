@@ -11,6 +11,7 @@ const Experience = () => {
                             'workflows for PBM by creating modern single page applications.'}
                             role={'Software Engineer'}
                             dates={'June 2019 - Present'}
+                            learnMorePath={'/cvs'}
                             technologies={'Angular, SpringBoot, Typescript, NGRX, AG Grid'}/>
             <ExperienceCard cardTitle={'University of Kentucky'}
                             imgSrc={require('./../../resources/uk-logo.jpeg').default}
@@ -20,6 +21,7 @@ const Experience = () => {
                             'projects and attend the CatHacks hackathon.'}
                             role={'Student'}
                             dates={'May 2016 - May 2019'}
+                            learnMorePath={'/uk'}
                             technologies={'Angular, Java, C++, Machine Learning, Javascript'}/>
         </div>
     );

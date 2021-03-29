@@ -15,6 +15,7 @@ const NavBar = () => {
     ];
 
     const pathMap = new Map<string, number>([
+        ['/', 0],
         ['/experience', 1],
         ['/projects', 2],
         ['/about', 3],
@@ -44,12 +45,13 @@ const NavBar = () => {
     })
 
     return (
-        <nav className='w-full sticky -top-1 bg-white'>
-            <ol className='flex list-none justify-between items-center max-w-full md:max-w-2xl lg:max-w-2xl m-auto'>
-                <li onClick={() => setActiveTab(0)} className='m-4 flex-shrink-0'>
-                    <HomeButton bounce={false}/>
-                </li>
-                <span className='flex ml-auto'>
+        activeTab !== undefined ?
+            <nav className='w-full sticky -top-1 bg-white'>
+                <ol className='flex list-none justify-between items-center max-w-full md:max-w-2xl lg:max-w-2xl m-auto'>
+                    <li onClick={() => setActiveTab(0)} className='m-4 flex-shrink-0'>
+                        <HomeButton bounce={false}/>
+                    </li>
+                    <span className='flex ml-auto'>
                 {links.map(link => (
                     <li className={determineClass(link.id)}
                         onClick={() => setActiveTab(link.id)}
@@ -58,8 +60,24 @@ const NavBar = () => {
                     </li>
                 ))}
                 </span>
-            </ol>
-        </nav>
+                </ol>
+            </nav>
+            :
+            <nav className='w-full sticky -top-1 bg-white'>
+                <ol className='flex list-none max-w-full md:max-w-2xl lg:max-w-2xl m-auto'>
+                    <li className='m-4 flex'>
+                        <Link className='flex' to='/experience'>
+                            <svg className='mr-2 transform rotate-180' fill="none" height="24" stroke="#000" strokeLinecap="round"
+                                 strokeLinejoin="round" strokeWidth="2"
+                                 viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="4" x2="20" y1="12" y2="12"/>
+                                <polyline points="14 6 20 12 14 18"/>
+                            </svg>
+                            <span>Go Back</span>
+                        </Link>
+                    </li>
+                </ol>
+            </nav>
     );
 }
 

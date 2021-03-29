@@ -1,24 +1,14 @@
 import React from 'react';
-import './experience-card-styles.scss';
-import {useHistory} from "react-router-dom";
 
-const ExperienceCard = (props: {
+const LearnMore = (props: {
     cardTitle: string,
     imgSrc: any,
     imgAlt: string,
     blurb: string,
     role: string,
     dates: string,
-    technologies: string,
-    learnMorePath: string
+    technologies: string
 }) => {
-
-    const history = useHistory();
-
-    const learnMore = () => {
-        history.push(props.learnMorePath);
-    }
-
     return (
         <div>
             <img className='m-auto lg:max-w-xl mb-8 mt-8'
@@ -41,7 +31,7 @@ const ExperienceCard = (props: {
                 </li>
             </ul>
             <div className='flex justify-center'>
-                <button className='flex' onClick={learnMore}>
+                <button className='flex'>
                     <span>Learn More</span>
                     <svg className='ml-2' fill="none" height="24" stroke="#000" strokeLinecap="round"
                          strokeLinejoin="round" strokeWidth="2"
@@ -55,4 +45,4 @@ const ExperienceCard = (props: {
     );
 }
 
-export default ExperienceCard;
+export default LearnMore;
