@@ -8,33 +8,26 @@ const Uk = () => {
                 <h1 className='head-container-uk md:ml-16 md:text-4xl'>University of Kentucky</h1>
             </div>
             <div className='m-4'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget tellus lacus. Donec
-                    consequat
-                    accumsan purus sit amet cursus. Ut ultrices nisi quis lorem dapibus, sit amet consectetur est
-                    facilisis.
-                    Aenean volutpat et turpis vitae condimentum. Suspendisse sed ultrices mi. Phasellus dignissim ipsum
-                    eget
-                    mi rutrum aliquet. Aliquam imperdiet elit tincidunt, semper mi at, sodales felis. Suspendisse
-                    potenti.
-                    Nam eget eleifend diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac
-                    tristique diam. Nullam sollicitudin in quam nec tincidunt. Nulla ac nibh nisl. Nulla pretium, orci
-                    sit
-                    amet ultricies malesuada, nisi magna pharetra ipsum, non tincidunt tortor dui venenatis justo.
-                    Aliquam
-                    eu augue a nulla laoreet commodo. In et mollis justo.
+                <p className='font-semibold'>I graduated from the University of Kentucky with a B.S. in Computer Science
+                    and a minor in Mathematics in May of 2019. During my time there I was fortunate to explore many
+                    different areas of interest and
+                    gained a great foundation to build on.</p>
 
-                    Etiam elementum at urna convallis dictum. Vestibulum fermentum id purus sit amet feugiat. Nulla
-                    facilisi. In pulvinar leo mauris, eget scelerisque odio auctor in. Proin finibus auctor mi in porta.
-                    Curabitur finibus sem et rhoncus maximus. Proin eros est, pulvinar ut felis et, imperdiet auctor
-                    ante.
-                    Aliquam nec quam purus. Vestibulum posuere felis in tellus fringilla pulvinar. Cras nec purus sed
-                    ipsum
-                    scelerisque posuere eget ac est. In nisl arcu, malesuada ac velit eget, ullamcorper commodo ante.
-                    Proin
-                    aliquet sed lectus consequat ullamcorper. Mauris a risus vel dolor posuere imperdiet a id nunc.
-                    Curabitur at tempus odio. Nunc semper luctus ante, nec consectetur quam luctus ut. In egestas sapien
-                    a
-                    quam mollis feugiat.</p>
+                <h1 className='font-semibold mt-10'>Relevant Coursework</h1>
+                <h2 className='font-semibold ml-4 mt-4'>Computer Science and Software Engineering</h2>
+                <p className='ml-4'>
+                    <a className='underline hover:text-green-600'
+                       href='https://github.com/pbarrett21/311App'
+                       rel='noreferrer'
+                       target='_blank'>Senior Design Project</a>
+                    , Machine Learning, Cryptology, Algorithm Design and Analysis, Theory of Computing, Systems
+                    Programming, Database Systems, Computer Science Ethics, Web Programming,
+                    Computer Networking</p>
+                <h2 className='font-semibold ml-4 mt-4'>Mathematics</h2>
+                <p className='ml-4'>Applicable Algebra, Discrete Mathematics, Numerical Methods, Matrix Algebra, Calc III</p>
+
+                <h1 className='font-semibold mt-10'>Accomplishments</h1>
+                <p className='ml-4'>Dean's List 2018-2019</p>
             </div>
         </div>
     );
