@@ -9,14 +9,16 @@ import AboutMe from './routes/aboutMe/aboutMe';
 import Footer from './footer/footer';
 import Cvs from './cvs/cvs';
 import Uk from './uk/uk';
+import ScrollToTop from './scrollToTop';
 
 function App() {
     return (
         <div
-            className='flex flex-col h-screen overflow-auto hide-scroll md:m-auto md:items-start'>
+            className='flex flex-col h-screen hide-scroll md:m-auto md:items-start'>
             <Router>
                 <div className='flex flex-col items-center flex-foot w-full'>
                     <NavBar/>
+                    <ScrollToTop/>
                     <Switch>
                         <Route exact path="/">
                             <Home/>
