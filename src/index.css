@@ -17,5 +17,5 @@ code {
 }
 
 html {
-  overflow: auto;
+  overflow-y: scroll;
 }
