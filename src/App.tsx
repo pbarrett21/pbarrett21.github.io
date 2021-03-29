@@ -7,6 +7,8 @@ import Experience from './routes/experience/experience';
 import Projects from './routes/projects/projects';
 import AboutMe from './routes/aboutMe/aboutMe';
 import Footer from './footer/footer';
+import Cvs from './cvs/cvs';
+import Uk from './uk/uk';
 
 function App() {
     return (
@@ -29,10 +31,10 @@ function App() {
                             <AboutMe/>
                         </Route>
                         <Route exact path="/cvs">
-                            <p>test cvs</p>
+                            <Cvs/>
                         </Route>
                         <Route exact path="/uk">
-                            <p>test uk</p>
+                            <Uk/>
                         </Route>
                     </Switch>
                 </div>
