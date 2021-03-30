@@ -24,10 +24,19 @@ const Uk = () => {
                     Programming, Database Systems, Computer Science Ethics, Web Programming,
                     Computer Networking</p>
                 <h2 className='font-semibold ml-4 mt-4'>Mathematics</h2>
-                <p className='ml-4'>Applicable Algebra, Discrete Mathematics, Numerical Methods, Matrix Algebra, Calc III</p>
+                <p className='ml-4'>Applicable Algebra, Discrete Mathematics, Numerical Methods, Matrix Algebra, Calc
+                    III</p>
 
                 <h1 className='font-semibold mt-10'>Accomplishments</h1>
                 <p className='ml-4'>Dean's List 2018-2019</p>
+
+                <h1 className='font-semibold mt-10'>CatHacks Hackathon</h1>
+                <p className='ml-4'>Entered and placed 2nd in the CatHacks Hackathon. We used an Amazon Alexa to
+                    transcribe speech to text to a Google Docs document using a custom Alexa Skill. View the
+                    implementation <a className='underline hover:text-green-600'
+                                      href='https://github.com/pbarrett21/cathacks-2018'
+                                      rel='noreferrer'
+                                      target='_blank'>here</a>.</p>
             </div>
         </div>
     );
