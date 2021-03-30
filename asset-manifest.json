@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3dccb38.chunk.css",
-    "main.js": "/static/js/main.0e8deeb2.chunk.js",
-    "main.js.map": "/static/js/main.0e8deeb2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ca8d680a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ca8d680a.js.map",
-    "static/js/2.98054138.chunk.js": "/static/js/2.98054138.chunk.js",
-    "static/js/2.98054138.chunk.js.map": "/static/js/2.98054138.chunk.js.map",
-    "static/js/3.f338b88c.chunk.js": "/static/js/3.f338b88c.chunk.js",
-    "static/js/3.f338b88c.chunk.js.map": "/static/js/3.f338b88c.chunk.js.map",
+    "main.css": "/static/css/main.96618581.chunk.css",
+    "main.js": "/static/js/main.e0629946.chunk.js",
+    "main.js.map": "/static/js/main.e0629946.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fbe4d903.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fbe4d903.js.map",
+    "static/js/2.45a686d4.chunk.js": "/static/js/2.45a686d4.chunk.js",
+    "static/js/2.45a686d4.chunk.js.map": "/static/js/2.45a686d4.chunk.js.map",
+    "static/js/3.c06da01e.chunk.js": "/static/js/3.c06da01e.chunk.js",
+    "static/js/3.c06da01e.chunk.js.map": "/static/js/3.c06da01e.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a3dccb38.chunk.css.map": "/static/css/main.a3dccb38.chunk.css.map",
-    "static/js/2.98054138.chunk.js.LICENSE.txt": "/static/js/2.98054138.chunk.js.LICENSE.txt",
+    "static/css/main.96618581.chunk.css.map": "/static/css/main.96618581.chunk.css.map",
+    "static/js/2.45a686d4.chunk.js.LICENSE.txt": "/static/js/2.45a686d4.chunk.js.LICENSE.txt",
     "static/media/codepen_icon.12c5e842.svg": "/static/media/codepen_icon.12c5e842.svg",
     "static/media/cup-of-coffee.jpeg": "/static/media/cup-of-coffee.271bb6ba.jpeg",
     "static/media/cvs-health-logo-stacked.png": "/static/media/cvs-health-logo-stacked.c78149f9.png",
@@ -19,12 +19,13 @@
     "static/media/insta_icon.f84fd96c.svg": "/static/media/insta_icon.f84fd96c.svg",
     "static/media/linkedin_icon.357adbe9.svg": "/static/media/linkedin_icon.357adbe9.svg",
     "static/media/logo192.png": "/static/media/logo192.34382b39.png",
-    "static/media/uk-logo.jpeg": "/static/media/uk-logo.56a78bea.jpeg"
+    "static/media/uk-logo.jpeg": "/static/media/uk-logo.56a78bea.jpeg",
+    "static/media/website.png": "/static/media/website.0e0d4e52.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ca8d680a.js",
-    "static/js/2.98054138.chunk.js",
-    "static/css/main.a3dccb38.chunk.css",
-    "static/js/main.0e8deeb2.chunk.js"
+    "static/js/runtime-main.fbe4d903.js",
+    "static/js/2.45a686d4.chunk.js",
+    "static/css/main.96618581.chunk.css",
+    "static/js/main.e0629946.chunk.js"
   ]
 }
