@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.96618581.chunk.css",
-    "main.js": "/static/js/main.b17220b4.chunk.js",
-    "main.js.map": "/static/js/main.b17220b4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.88930e11.js",
-    "runtime-main.js.map": "/static/js/runtime-main.88930e11.js.map",
-    "static/js/2.b98f67f0.chunk.js": "/static/js/2.b98f67f0.chunk.js",
-    "static/js/2.b98f67f0.chunk.js.map": "/static/js/2.b98f67f0.chunk.js.map",
-    "static/js/3.f1e0919c.chunk.js": "/static/js/3.f1e0919c.chunk.js",
-    "static/js/3.f1e0919c.chunk.js.map": "/static/js/3.f1e0919c.chunk.js.map",
+    "main.css": "/static/css/main.b3f617cc.chunk.css",
+    "main.js": "/static/js/main.d6505e0a.chunk.js",
+    "main.js.map": "/static/js/main.d6505e0a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2aa8b756.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2aa8b756.js.map",
+    "static/js/2.1baefe6d.chunk.js": "/static/js/2.1baefe6d.chunk.js",
+    "static/js/2.1baefe6d.chunk.js.map": "/static/js/2.1baefe6d.chunk.js.map",
+    "static/js/3.bfdfb41f.chunk.js": "/static/js/3.bfdfb41f.chunk.js",
+    "static/js/3.bfdfb41f.chunk.js.map": "/static/js/3.bfdfb41f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.96618581.chunk.css.map": "/static/css/main.96618581.chunk.css.map",
-    "static/js/2.b98f67f0.chunk.js.LICENSE.txt": "/static/js/2.b98f67f0.chunk.js.LICENSE.txt",
+    "static/css/main.b3f617cc.chunk.css.map": "/static/css/main.b3f617cc.chunk.css.map",
+    "static/js/2.1baefe6d.chunk.js.LICENSE.txt": "/static/js/2.1baefe6d.chunk.js.LICENSE.txt",
     "static/media/codepen_icon.12c5e842.svg": "/static/media/codepen_icon.12c5e842.svg",
     "static/media/cup-of-coffee.jpeg": "/static/media/cup-of-coffee.271bb6ba.jpeg",
     "static/media/cvs-health-logo-stacked.png": "/static/media/cvs-health-logo-stacked.c78149f9.png",
@@ -20,12 +20,12 @@
     "static/media/linkedin_icon.357adbe9.svg": "/static/media/linkedin_icon.357adbe9.svg",
     "static/media/logo192.png": "/static/media/logo192.34382b39.png",
     "static/media/uk-logo.jpeg": "/static/media/uk-logo.56a78bea.jpeg",
-    "static/media/website.png": "/static/media/website.0e0d4e52.png"
+    "static/media/websitejpg.jpeg": "/static/media/websitejpg.d80a8951.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.88930e11.js",
-    "static/js/2.b98f67f0.chunk.js",
-    "static/css/main.96618581.chunk.css",
-    "static/js/main.b17220b4.chunk.js"
+    "static/js/runtime-main.2aa8b756.js",
+    "static/js/2.1baefe6d.chunk.js",
+    "static/css/main.b3f617cc.chunk.css",
+    "static/js/main.d6505e0a.chunk.js"
   ]
 }
