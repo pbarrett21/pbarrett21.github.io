@@ -2,6 +2,15 @@ import React from 'react';
 import './about-me-styles.scss';
 
 const AboutMe = () => {
+
+    const links: {label: string, link: string}[] = [
+        {label: 'Tools I use 🛠', link: 'https://github.com/pbarrett21/tools-and-gadgets/blob/main/README.md'},
+        {label: 'Github', link: 'https://github.com/pbarrett21'},
+        {label: 'LinkedIn', link: 'https://www.linkedin.com/in/pbarrett21/'},
+        {label: 'CodePen', link: 'https://codepen.io/paulbarrett'},
+        {label: 'Instagram', link: 'https://www.instagram.com/paulbarr21/'}
+    ];
+
     return (
         <div className='max-w-full md:max-w-2xl lg:max-w-2xl m-4'>
             <h1 className='font-semibold text-2xl mt-10 mb-6'>Career</h1>
@@ -36,26 +45,12 @@ const AboutMe = () => {
                 Here are some useful or relevant links:
             </p>
             <ul className='pt-4 pl-16'>
-                <li><a className='underline hover:text-green-600'
-                       href='https://github.com/pbarrett21/tools-and-gadgets/blob/main/README.md'
-                       rel='noreferrer'
-                       target='_blank'>Tools I use 🛠</a></li>
-                <li><a className='underline hover:text-green-600'
-                       href='https://github.com/pbarrett21'
-                       rel='noreferrer'
-                       target='_blank'>Github</a></li>
-                <li><a className='underline hover:text-green-600'
-                       href='https://www.linkedin.com/in/pbarrett21/'
-                       rel='noreferrer'
-                       target='_blank'>LinkedIn</a></li>
-                <li><a className='underline hover:text-green-600'
-                       href='https://codepen.io/paulbarrett'
-                       rel='noreferrer'
-                       target='_blank'>CodePen</a></li>
-                <li><a className='underline hover:text-green-600'
-                       href='https://www.instagram.com/paulbarr21/'
-                       rel='noreferrer'
-                       target='_blank'>Instagram</a></li>
+                {links.map(link => (
+                    <li key={link.label} className='mb-1'><a className='underline hover:text-green-600'
+                           href={link.link}
+                           rel='noreferrer'
+                           target='_blank'>{link.label}</a></li>
+                ))}
             </ul>
 
             <h1 className='font-semibold text-2xl mt-10 mb-6'>Resume</h1>

@@ -10,6 +10,7 @@ import Footer from './footer/footer';
 import Cvs from './cvs/cvs';
 import Uk from './uk/uk';
 import ScrollToTop from './scrollToTop';
+import Website from './website/website';
 
 function App() {
     return (
@@ -37,6 +38,9 @@ function App() {
                         </Route>
                         <Route exact path="/uk">
                             <Uk/>
+                        </Route>
+                        <Route exact path="/website">
+                            <Website/>
                         </Route>
                     </Switch>
                 </div>

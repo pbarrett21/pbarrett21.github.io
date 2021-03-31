@@ -23,6 +23,7 @@ const Footer = () => {
                                  leaveDelay={200}
                                  placement='top'>
                             <a href={link.link}
+                               aria-label={link.hoverText}
                                rel='noreferrer'
                                target='_blank'>{link.icon}</a>
                         </Tooltip>
