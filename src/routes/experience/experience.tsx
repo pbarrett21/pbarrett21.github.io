@@ -20,7 +20,7 @@ const Experience = () => {
                             'and a minor in mathematics. During my time as a student I was able to work on many interesting ' +
                             'projects and attend the CatHacks hackathon.'}
                             role={'Student'}
-                            dates={'May 2016 - May 2019'}
+                            dates={'May 2015 - May 2019'}
                             learnMorePath={'/uk'}
                             technologies={'Angular, Java, C++, Machine Learning, Javascript'}/>
         </div>
