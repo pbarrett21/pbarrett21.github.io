@@ -2,12 +2,12 @@ import React, {useState} from 'react';
 import './home-button-styles.scss';
 import {useHistory} from "react-router-dom";
 
-const HomeButton = (props: { bounce: boolean }) => {
+const HomeButton = (props: { spin: boolean }) => {
     const [rotate, setRotate] = useState(false);
     const history = useHistory();
 
     function handleClick() {
-        if (props.bounce) {
+        if (props.spin) {
             setRotate(!rotate)
         }
         history.push("/");
