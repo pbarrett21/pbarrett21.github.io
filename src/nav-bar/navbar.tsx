@@ -49,7 +49,7 @@ const NavBar = () => {
             <nav className='w-full sticky -top-1 bg-white'>
                 <ol className='flex list-none justify-between items-center max-w-full md:max-w-2xl lg:max-w-2xl m-auto'>
                     <li onClick={() => setActiveTab(0)} className='m-4 flex-shrink-0'>
-                        <HomeButton bounce={false}/>
+                        <HomeButton bounce={true}/>
                     </li>
                     <span className='flex ml-auto'>
                 {links.map(link => (
