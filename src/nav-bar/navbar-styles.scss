@@ -3,3 +3,15 @@
   text-underline-offset: 5px;
   text-decoration-thickness: 2px;
 }
+
+.back-container {
+  display: flex;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.back-container:hover {
+  box-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-color: rgba(0, 0, 0, var(--tw-ring-opacity));
+  cursor: pointer;
+}

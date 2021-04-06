@@ -65,15 +65,13 @@ const NavBar = () => {
             :
             <nav className='w-full sticky -top-1 bg-white'>
                 <ol className='flex list-none max-w-full md:max-w-2xl lg:max-w-2xl m-auto'>
-                    <li className='m-4 flex' onClick={() => history.goBack()}>
-                        <svg className='mr-2 transform rotate-180' fill="none" height="24" stroke="#000"
-                             strokeLinecap="round"
-                             strokeLinejoin="round" strokeWidth="2"
-                             viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="4" x2="20" y1="12" y2="12"/>
-                            <polyline points="14 6 20 12 14 18"/>
-                        </svg>
-                        <span>Go Back</span>
+                    <li className='m-4' onClick={() => history.goBack()}>
+                        <div className='back-container'>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                            </svg>
+                            <span>Go Back</span>
+                        </div>
                     </li>
                 </ol>
             </nav>
