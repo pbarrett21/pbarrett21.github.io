@@ -25,7 +25,7 @@ const ExperienceCard = (props: {
 
     return (
         <div className={theme === 'dark' ? 'bg-darkMode text-white' : 'bg-white'}>
-            <img className='m-auto lg:max-w-xl mb-8 mt-8'
+            <img className='bg-white m-auto lg:max-w-xl mb-8 mt-8'
                  src={props.imgSrc}
                  alt={props.imgAlt}/>
             <h1 className='font-extrabold lg:font-black mt-8 text-2xl mb-4'>{props.cardTitle}</h1>
