@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import './experience-card-styles.scss';
 import {useHistory} from "react-router-dom";
 import ThemeContext from '../theme-context';
+import GoToButton from '../go-to-button/goToButton';
 
 const ExperienceCard = (props: {
     cardTitle: string,
@@ -45,10 +46,7 @@ const ExperienceCard = (props: {
             </ul>
             <div className='flex justify-center'>
                 <button className='flex' onClick={learnMore}>
-                    <span>Learn More</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    <GoToButton text={'Learn Mode'}/>
                 </button>
             </div>
         </div>

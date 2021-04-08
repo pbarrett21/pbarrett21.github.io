@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import './website-styles.scss';
 import ThemeContext from '../theme-context';
+import GoToButton from '../go-to-button/goToButton';
 
 const Website = () => {
 
@@ -46,10 +47,7 @@ const Website = () => {
                        href='https://github.com/pbarrett21/pbarrett21.github.io/tree/develop'
                        rel='noreferrer'
                        target='_blank'>
-                        <span>View the Code</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
+                        <GoToButton text={'View the Code'}/>
                     </a>
                 </div>
 
