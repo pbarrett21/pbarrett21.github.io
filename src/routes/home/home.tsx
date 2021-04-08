@@ -1,16 +1,21 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './home-styles.css';
 import {useHistory} from "react-router-dom";
+import ThemeContext from '../../theme-context';
 
 const Home = () => {
     const history = useHistory();
+
+    const theme = useContext(ThemeContext).theme;
 
     const showExperience = () => {
         history.push("/experience");
     }
 
     return (
-        <div className='max-w-full md:max-w-2xl lg:max-w-2xl m-4'>
+        <div className={theme !== 'dark' ?
+            'max-w-full md:max-w-2xl lg:max-w-2xl m-4'
+            : 'text-white max-w-full md:max-w-2xl lg:max-w-2xl m-4'}>
             <img className='rounded shadow-md'
                  src={require('./../../resources/cup-of-coffee.jpeg').default}
                  alt='macbook and coffee'/>

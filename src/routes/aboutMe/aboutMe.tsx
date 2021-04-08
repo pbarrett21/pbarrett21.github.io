@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './about-me-styles.scss';
+import ThemeContext from '../../theme-context';
 
 const AboutMe = () => {
 
-    const links: {label: string, link: string}[] = [
+    const theme = useContext(ThemeContext).theme;
+
+    const links: { label: string, link: string }[] = [
         {label: 'Tools I use 🛠', link: 'https://github.com/pbarrett21/tools-and-gadgets/blob/main/README.md'},
         {label: 'Github', link: 'https://github.com/pbarrett21'},
         {label: 'LinkedIn', link: 'https://www.linkedin.com/in/pbarrett21/'},
@@ -12,7 +15,9 @@ const AboutMe = () => {
     ];
 
     return (
-        <div className='max-w-full md:max-w-2xl lg:max-w-2xl m-4'>
+        <div className={theme === 'dark' ?
+            'text-white max-w-full md:max-w-2xl lg:max-w-2xl m-4'
+            : 'max-w-full md:max-w-2xl lg:max-w-2xl m-4'}>
             <h1 className='font-semibold text-2xl mt-10 mb-6'>Career</h1>
             <p className='text-lg font-normal ml-8'>
                 I am a software developer with over 2 years of professional experience. I
@@ -47,9 +52,9 @@ const AboutMe = () => {
             <ul className='pt-4 pl-16'>
                 {links.map(link => (
                     <li key={link.label} className='mb-1'><a className='underline hover:text-green-600'
-                           href={link.link}
-                           rel='noreferrer'
-                           target='_blank'>{link.label}</a></li>
+                                                             href={link.link}
+                                                             rel='noreferrer'
+                                                             target='_blank'>{link.label}</a></li>
                 ))}
             </ul>
 

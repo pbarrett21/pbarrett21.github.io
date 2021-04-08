@@ -1,12 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import HomeButton from '../home-button/home-button';
 import {Link, useHistory} from 'react-router-dom';
 import {useLocation} from "react-router-dom";
 import './navbar-styles.scss';
+import ThemeContext from '../theme-context';
 
 const NavBar = () => {
     const location = useLocation();
     const history = useHistory();
+
+    const theme = useContext(ThemeContext).theme;
 
     const links = [
         {id: 1, label: 'Experience', link: 'experience'},
@@ -46,7 +49,9 @@ const NavBar = () => {
 
     return (
         activeTab !== undefined ?
-            <nav className='w-full sticky -top-1 bg-white'>
+            <nav className={theme !== 'dark' ?
+                'w-full sticky -top-1 bg-white'
+                : 'w-full sticky -top-1 bg-darkMode text-white'}>
                 <ol className='flex list-none justify-between items-center max-w-full md:max-w-2xl lg:max-w-2xl m-auto'>
                     <li onClick={() => setActiveTab(0)} className='m-4 flex-shrink-0'>
                         <HomeButton spin={false}/>
@@ -54,21 +59,24 @@ const NavBar = () => {
                     <span className='flex ml-auto'>
                 {links.map(link => (
                     <li className={determineClass(link.id)}
-                        onClick={() => setActiveTab(link.id)}
                         key={link.label}>
-                        <Link to={link.link}>{link.label}</Link>
+                        <Link onClick={() => setActiveTab(link.id)} to={link.link}>{link.label}</Link>
                     </li>
                 ))}
                 </span>
                 </ol>
             </nav>
             :
-            <nav className='w-full sticky -top-1 bg-white'>
+            <nav className={theme !== 'dark' ?
+                'w-full sticky -top-1 bg-white'
+                : 'w-full sticky -top-1 bg-darkMode text-white'}>
                 <ol className='flex list-none max-w-full md:max-w-2xl lg:max-w-2xl m-auto'>
                     <li className='m-4' onClick={() => history.goBack()}>
                         <div className='back-container'>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-1" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                      d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                             </svg>
                             <span>Go Back</span>
                         </div>

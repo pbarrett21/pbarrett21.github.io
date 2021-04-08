@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import NavBar from './nav-bar/navbar';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -11,40 +11,51 @@ import Cvs from './cvs/cvs';
 import Uk from './uk/uk';
 import ScrollToTop from './scrollToTop';
 import Website from './website/website';
+import ThemeContext from './theme-context';
 
 function App() {
+    const [theme, setTheme] = useState('dark');
+    const value = {theme, setTheme};
+
     return (
-        <div
-            className='flex flex-col h-screen hide-scroll md:m-auto md:items-start'>
+        <div className={theme === 'dark' ?
+            'bg-darkMode flex flex-col h-screen hide-scroll md:m-auto md:items-start'
+            : 'flex flex-col h-screen hide-scroll md:m-auto md:items-start'}>
             <Router>
-                <div className='flex flex-col items-center flex-foot w-full'>
-                    <NavBar/>
-                    <ScrollToTop/>
-                    <Switch>
-                        <Route exact path="/">
-                            <Home/>
-                        </Route>
-                        <Route exact path="/experience">
-                            <Experience/>
-                        </Route>
-                        <Route exact path="/projects">
-                            <Projects/>
-                        </Route>
-                        <Route exact path="/about">
-                            <AboutMe/>
-                        </Route>
-                        <Route exact path="/cvs">
-                            <Cvs/>
-                        </Route>
-                        <Route exact path="/uk">
-                            <Uk/>
-                        </Route>
-                        <Route exact path="/website">
-                            <Website/>
-                        </Route>
-                    </Switch>
-                </div>
-                <Footer/>
+                <ThemeContext.Provider value={value}>
+                    <div className={theme === 'dark' ?
+                        'bg-darkMode flex flex-col items-center flex-foot w-full'
+                        : 'flex flex-col items-center flex-foot w-full'}>
+                        <NavBar/>
+                        <ScrollToTop/>
+                        <Switch>
+                            <Route exact path="/">
+                                <Home/>
+                            </Route>
+                            <Route exact path="/experience">
+                                <Experience/>
+                            </Route>
+                            <Route exact path="/projects">
+                                <Projects/>
+                            </Route>
+                            <Route exact path="/about">
+                                <AboutMe/>
+                            </Route>
+                            <Route exact path="/cvs">
+                                <Cvs/>
+                            </Route>
+                            <Route exact path="/uk">
+                                <Uk/>
+                            </Route>
+                            <Route exact path="/website">
+                                <Website/>
+                            </Route>
+                        </Switch>
+                    </div>
+                    <div className={theme === 'dark' ? 'w-full bg-darkMode' : 'w-full'}>
+                        <Footer/>
+                    </div>
+                </ThemeContext.Provider>
             </Router>
         </div>
     );

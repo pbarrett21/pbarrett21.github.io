@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './website-styles.scss';
+import ThemeContext from '../theme-context';
 
 const Website = () => {
+
+    const theme = useContext(ThemeContext).theme;
+
     return (
-        <div className='w-full md:max-w-2xl lg:max-w-2xl'>
+        <div className={theme === 'dark' ?
+            'text-white w-full md:max-w-2xl lg:max-w-2xl'
+            : 'w-full md:max-w-2xl lg:max-w-2xl'}>
             <div className='w-full flex website-gradient'>
                 <h1 className='head-container-website md:ml-16 md:text-4xl'>Portfolio Website</h1>
             </div>
@@ -41,11 +47,8 @@ const Website = () => {
                        rel='noreferrer'
                        target='_blank'>
                         <span>View the Code</span>
-                        <svg className='ml-2' fill="none" height="24" stroke="#000" strokeLinecap="round"
-                             strokeLinejoin="round" strokeWidth="2"
-                             viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="4" x2="20" y1="12" y2="12"/>
-                            <polyline points="14 6 20 12 14 18"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </a>
                 </div>

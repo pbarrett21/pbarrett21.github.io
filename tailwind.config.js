@@ -6,7 +6,8 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       'cvs': '#CC0000',
-      'uk': '#0033A0'
+      'uk': '#0033A0',
+      'darkMode': '#1E1F25'
     }),
     flex: {
       '1': '1 1 0%',

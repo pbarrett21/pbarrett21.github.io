@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './uk-styles.scss';
+import ThemeContext from '../theme-context';
 
 const Uk = () => {
+
+    const theme = useContext(ThemeContext).theme;
+
     return (
-        <div className='w-full md:max-w-2xl lg:max-w-2xl'>
+        <div className={theme === 'dark' ?
+            'text-white w-full md:max-w-2xl lg:max-w-2xl'
+            : 'w-full md:max-w-2xl lg:max-w-2xl'}>
             <div className='w-full flex uk-banner'>
                 <h1 className='head-container-uk md:ml-16 md:text-4xl'>University of Kentucky</h1>
             </div>

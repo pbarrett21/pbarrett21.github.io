@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './cvs-styles.scss';
+import ThemeContext from '../theme-context';
 
 const Cvs = () => {
+
+    const theme = useContext(ThemeContext).theme;
+
     return (
-        <div className='w-full md:max-w-2xl lg:max-w-2xl'>
+        <div className={theme === 'dark' ?
+            'text-white w-full md:max-w-2xl lg:max-w-2xl'
+            : 'w-full md:max-w-2xl lg:max-w-2xl'}>
             <div className='w-full flex cvs-banner'>
                 <h1 className='head-container md:ml-16 md:text-7xl'>CVS</h1>
             </div>
