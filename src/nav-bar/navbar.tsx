@@ -56,14 +56,14 @@ const NavBar = () => {
                     <li onClick={() => setActiveTab(0)} className='m-4 flex-shrink-0'>
                         <HomeButton spin={false}/>
                     </li>
-                    <span className='flex ml-auto'>
+                    <ul className='flex ml-auto'>
                 {links.map(link => (
                     <li className={determineClass(link.id)}
                         key={link.label}>
                         <Link onClick={() => setActiveTab(link.id)} to={link.link}>{link.label}</Link>
                     </li>
                 ))}
-                </span>
+                </ul>
                 </ol>
             </nav>
             :

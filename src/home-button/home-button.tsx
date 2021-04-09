@@ -1,10 +1,13 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './home-button-styles.scss';
 import {useHistory} from "react-router-dom";
+import ThemeContext from '../theme-context';
 
 const HomeButton = (props: { spin: boolean }) => {
     const [rotate, setRotate] = useState(false);
     const history = useHistory();
+
+    const theme = useContext(ThemeContext).theme;
 
     function handleClick() {
         if (props.spin) {
@@ -18,7 +21,7 @@ const HomeButton = (props: { spin: boolean }) => {
             <img className={rotate ? 'w-8 h-8 spin' : 'h-8 w-8'}
                  onClick={handleClick}
                  onAnimationEnd={() => setRotate(!rotate)}
-                 src={require('./../resources/Group 33.png').default}
+                 src={require(`../resources/${theme}-thick.png`).default}
                  alt='Home Button'/>
         </button>
     );
