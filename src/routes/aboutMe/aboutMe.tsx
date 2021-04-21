@@ -62,7 +62,7 @@ const AboutMe = () => {
             <p className='text-lg font-normal ml-8'>
                 Feel free to take a look at my
                 <a className='font-medium underline ml-1 hover:text-green-600'
-                   href='https://drive.google.com/file/d/1UFIC8bJuODdCSyClckDhMijGcVw7TUgZ/view?usp=sharing'
+                   href='https://drive.google.com/file/d/1WOaCF7TBOi05M-YLi7eHGNaQ3GQx-tPS/view?usp=sharing'
                    rel='noreferrer'
                    target='_blank'>resume</a>
             </p>
