@@ -24,6 +24,17 @@ const Home = () => {
                 <h1 className='text-lg font-normal'>I am a software developer dedicated to
                     constant improvement and exploration</h1>
             </div>
+
+            <div className='md:flex md:flex-col md:items-center mt-6'>
+                <span className='text-lg font-normal mt-6 mb-6 md:ml-auto md:mr-auto'>
+                Download my
+                    <a className='font-medium underline ml-1 hover:text-green-600'
+                       href='https://drive.google.com/file/d/1ua7YvaQxa8Whv047ww_0hmtobuBzcHGL/view?usp=sharing'
+                       rel='noreferrer'
+                       target='_blank'>resume</a>
+                </span>
+            </div>
+
             <button className='flex mt-10 md:ml-auto md:mr-auto' onClick={showExperience}>
                 <div className='back-container'>
                     <span>Check out my experience</span>
