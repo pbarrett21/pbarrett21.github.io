@@ -12,6 +12,7 @@ import Uk from './uk/uk';
 import ScrollToTop from './scrollToTop';
 import Website from './website/website';
 import ThemeContext from './theme-context';
+import Loutrails from './loutrails/loutrails';
 
 function App() {
     const [theme, setTheme] = useState('dark');
@@ -49,6 +50,9 @@ function App() {
                             </Route>
                             <Route exact path="/website">
                                 <Website/>
+                            </Route>
+                            <Route exact path="/loutrails">
+                                <Loutrails/>
                             </Route>
                         </Switch>
                     </div>
