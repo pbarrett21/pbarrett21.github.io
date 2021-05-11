@@ -40,6 +40,10 @@ const Cvs = () => {
                 <h2 className='font-semibold ml-4 mt-4'>Contribute to Proprietary Angular Component Library</h2>
                 <p className='ml-4'>I have enjoyed being able to contribute many new features and bugfixes on the CVS
                     ACL. I have learned a lot about libraries, versioning, and more from this experience!</p>
+                <h2 className='font-semibold ml-4 mt-4'>Diagnose and remove memory leak slowing test execution
+                    times</h2>
+                <p className='ml-4'>On a project with over 1500 angular tests, I was able to find and successfully fix a
+                    memory leak improving test run time from 22 minutes to 4.</p>
                 <h2 className='font-semibold ml-4 mt-4'>Accessibility Champion</h2>
                 <p className='ml-4'>I have championed the effort to bring greater accessibility standards to all
                     products in our lab. This has included sharing knowledge how to make apps more accessible,
