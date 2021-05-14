@@ -43,7 +43,8 @@ const Cvs = () => {
                 <h2 className='font-semibold ml-4 mt-4'>Diagnose and remove memory leak slowing test execution
                     times</h2>
                 <p className='ml-4'>On a project with over 1500 angular tests, I was able to find and successfully fix a
-                    memory leak improving test run time from 22 minutes to 4.</p>
+                    memory leak improving test run time from 22 minutes to 3 - an <b>86% total reduction in test run
+                        time.</b></p>
                 <h2 className='font-semibold ml-4 mt-4'>Accessibility Champion</h2>
                 <p className='ml-4'>I have championed the effort to bring greater accessibility standards to all
                     products in our lab. This has included sharing knowledge how to make apps more accessible,
