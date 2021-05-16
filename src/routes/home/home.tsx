@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import './home-styles.css';
 import {useHistory} from "react-router-dom";
 import ThemeContext from '../../theme-context';
+import {RESUME_LINK} from '../../App';
 
 const Home = () => {
     const history = useHistory();
@@ -29,7 +30,7 @@ const Home = () => {
                 <span className='text-lg font-normal mt-6 mb-6 md:ml-auto md:mr-auto'>
                 Download my
                     <a className='font-medium underline ml-1 hover:text-green-600'
-                       href='https://drive.google.com/file/d/1Bf8Yqsyx78_HYSKCbPKTby_3TZQCGn9x/view?usp=sharing'
+                       href={RESUME_LINK}
                        rel='noreferrer'
                        target='_blank'>resume</a>
                 </span>

@@ -14,6 +14,8 @@ import Website from './website/website';
 import ThemeContext from './theme-context';
 import Loutrails from './loutrails/loutrails';
 
+export const RESUME_LINK = 'https://drive.google.com/file/d/1WufoxMg_ns6R9tOTklSSBBgH5VTqIVq7/view?usp=sharing';
+
 function App() {
     const [theme, setTheme] = useState('dark');
     const value = {theme, setTheme};

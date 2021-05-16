@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import './about-me-styles.scss';
 import ThemeContext from '../../theme-context';
+import {RESUME_LINK} from '../../App';
 
 const AboutMe = () => {
 
@@ -62,7 +63,7 @@ const AboutMe = () => {
             <p className='text-lg font-normal ml-8'>
                 Feel free to take a look at my
                 <a className='font-medium underline ml-1 hover:text-green-600'
-                   href='https://drive.google.com/file/d/1Bf8Yqsyx78_HYSKCbPKTby_3TZQCGn9x/view?usp=sharing'
+                   href={RESUME_LINK}
                    rel='noreferrer'
                    target='_blank'>resume</a>
             </p>
