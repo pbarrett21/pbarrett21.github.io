@@ -46,7 +46,7 @@ const ExperienceCard = (props: {
             </ul>
             <div className='flex justify-center'>
                 <button className='flex mb-8' onClick={learnMore}>
-                    <GoToButton text={'Learn Mode'}/>
+                    <GoToButton text={'Learn More'}/>
                 </button>
             </div>
         </div>
