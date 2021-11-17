@@ -15,19 +15,20 @@ const Home = () => {
 
     return (
         <div className={theme !== 'dark' ?
-            'max-w-full md:max-w-2xl lg:max-w-2xl m-4'
-            : 'text-white max-w-full md:max-w-2xl lg:max-w-2xl m-4'}>
-            <img className='rounded shadow-md'
+            'flex flex-1 flex-col justify-center max-w-full md:max-w-2xl lg:max-w-2xl m-4'
+            : 'flex flex-1 flex-col justify-center text-white max-w-full md:max-w-2xl lg:max-w-2xl m-4'}>
+            {/* Removing image for now
+                <img className='rounded shadow-md'
                  src={require('./../../resources/cup-of-coffee.jpeg').default}
-                 alt='macbook and coffee'/>
+                 alt='macbook and coffee'/> */}
             <div className='md:flex md:flex-col md:items-center'>
-                <h1 className='text-xl font-semibold mt-6 mb-6 md:ml-auto md:mr-auto'>Hey there, I'm Paul 👋</h1>
+                <h1 className='text-4xl font-semibold mt-6 mb-6 md:ml-auto md:mr-auto'>Hey there, I'm Paul 👋</h1>
                 <h1 className='text-lg font-normal'>I am a software developer dedicated to
                     constant improvement and exploration</h1>
             </div>
 
             <div className='md:flex md:flex-col md:items-center mt-6'>
-                <span className='text-lg font-normal mt-6 mb-6 md:ml-auto md:mr-auto'>
+                <span className='text-lg font-normal mt-6 mb-4 md:ml-auto md:mr-auto'>
                 Download my
                     <a className='font-medium underline ml-1 hover:text-green-600'
                        href={RESUME_LINK}
@@ -36,7 +37,7 @@ const Home = () => {
                 </span>
             </div>
 
-            <button className='flex mt-10 md:ml-auto md:mr-auto' onClick={showExperience}>
+            <button className='flex md:ml-auto md:mr-auto' onClick={showExperience}>
                 <div className='back-container'>
                     <span>Check out my experience</span>
                     <svg className='arrow-bounce ml-2' fill="none" height="24" stroke="#000" strokeLinecap="round"
