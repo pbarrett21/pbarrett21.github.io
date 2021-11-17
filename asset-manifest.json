@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4c18a25.chunk.css",
-    "main.js": "/static/js/main.e2665fb6.chunk.js",
-    "main.js.map": "/static/js/main.e2665fb6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d5706727.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d5706727.js.map",
-    "static/js/2.2c819363.chunk.js": "/static/js/2.2c819363.chunk.js",
-    "static/js/2.2c819363.chunk.js.map": "/static/js/2.2c819363.chunk.js.map",
-    "static/js/3.1e634cd3.chunk.js": "/static/js/3.1e634cd3.chunk.js",
-    "static/js/3.1e634cd3.chunk.js.map": "/static/js/3.1e634cd3.chunk.js.map",
+    "main.css": "/static/css/main.8aeb3d9d.chunk.css",
+    "main.js": "/static/js/main.c0271f92.chunk.js",
+    "main.js.map": "/static/js/main.c0271f92.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ec764ee2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ec764ee2.js.map",
+    "static/js/2.debcf320.chunk.js": "/static/js/2.debcf320.chunk.js",
+    "static/js/2.debcf320.chunk.js.map": "/static/js/2.debcf320.chunk.js.map",
+    "static/js/3.f454d51b.chunk.js": "/static/js/3.f454d51b.chunk.js",
+    "static/js/3.f454d51b.chunk.js.map": "/static/js/3.f454d51b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b4c18a25.chunk.css.map": "/static/css/main.b4c18a25.chunk.css.map",
-    "static/js/2.2c819363.chunk.js.LICENSE.txt": "/static/js/2.2c819363.chunk.js.LICENSE.txt",
-    "static/media/cup-of-coffee.jpeg": "/static/media/cup-of-coffee.f45fb1d3.jpeg",
+    "static/css/main.8aeb3d9d.chunk.css.map": "/static/css/main.8aeb3d9d.chunk.css.map",
+    "static/js/2.debcf320.chunk.js.LICENSE.txt": "/static/js/2.debcf320.chunk.js.LICENSE.txt",
     "static/media/cvs-health-logo-stacked.png": "/static/media/cvs-health-logo-stacked.c78149f9.png",
     "static/media/dark-thick.png": "/static/media/dark-thick.88bdbded.png",
     "static/media/light-thick.png": "/static/media/light-thick.c59f33c7.png",
@@ -21,9 +20,9 @@
     "static/media/websitejpg.jpeg": "/static/media/websitejpg.d80a8951.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d5706727.js",
-    "static/js/2.2c819363.chunk.js",
-    "static/css/main.b4c18a25.chunk.css",
-    "static/js/main.e2665fb6.chunk.js"
+    "static/js/runtime-main.ec764ee2.js",
+    "static/js/2.debcf320.chunk.js",
+    "static/css/main.8aeb3d9d.chunk.css",
+    "static/js/main.c0271f92.chunk.js"
   ]
 }
