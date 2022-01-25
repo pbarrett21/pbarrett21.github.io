@@ -21,7 +21,7 @@ const AboutMe = () => {
             : 'max-w-full md:max-w-2xl lg:max-w-2xl m-4'}>
             <h1 className='font-semibold text-2xl mt-10 mb-6'>Career</h1>
             <p className='text-lg font-normal ml-8'>
-                I am a software developer with over 2 years of professional experience. I
+                I am a software developer with 3 years of professional experience. I
                 have been immersed in an agile development environment and have been fortunate to work with
                 fantastic teammates on many interesting projects while using modern technologies. I have
                 enjoyed being able to participate and contribute in the planning of new products and then to create and
