@@ -66,15 +66,6 @@ const Loutrails = () => {
                     </a>
                 </div>
 
-                <div className='flex justify-center mt-4'>
-                    <a className='flex'
-                       href='https://github.com/pbarrett21/LouTrails'
-                       rel='noreferrer'
-                       target='_blank'>
-                        <GoToButton text={'View the Code'}/>
-                    </a>
-                </div>
-
             </div>
         </div>
     );

@@ -9,10 +9,10 @@ const Experience = () => {
                             imgAlt={'CVS Health Logo'}
                             blurb={'I joined CVS Health in 2019 as a full stack engineer working on renovating ' +
                             'workflows for PBM by creating modern single page applications.'}
-                            role={'Software Engineer'}
+                            role={'Software Engineer II'}
                             dates={'June 2019 - Present'}
                             learnMorePath={'/cvs'}
-                            technologies={'Angular, SpringBoot, Typescript, NGRX, AG Grid'}/>
+                            technologies={'Typescript, Java, SQL'}/>
             <ExperienceCard cardTitle={'University of Kentucky'}
                             imgSrc={require('./../../resources/uk-logo.jpeg').default}
                             imgAlt={'University of Kentucky Logo'}
@@ -22,7 +22,7 @@ const Experience = () => {
                             role={'Student'}
                             dates={'May 2015 - May 2019'}
                             learnMorePath={'/uk'}
-                            technologies={'Angular, Java, C++, Machine Learning, Javascript'}/>
+                            technologies={'React, Java, C++, Machine Learning, Javascript'}/>
         </div>
     );
 }

@@ -14,35 +14,30 @@ const Cvs = () => {
                 <h1 className='head-container md:ml-16 md:text-7xl'>CVS</h1>
             </div>
             <div className='m-4'>
-                <p className='font-semibold'>I have been a full-stack engineer at CVS for over 2 years and have grown
+                <p className='font-semibold'>I have been a full-stack engineer at CVS for 3 years and have grown
                     significantly during that
                     time. I have enjoyed being able to participate and contribute at every stage of the product
                     lifecycle from initial planning all the way to delivering MVP.</p>
 
                 <h1 className='font-semibold mt-10'>Technical Responsibilities and Information</h1>
                 <h2 className='font-semibold ml-4 mt-4'>Technologies and Tools Used</h2>
-                <p className='ml-4'>Angular, SpringBoot, Oracle SQL databases, Typescript, GitLab, Flyway, Lombok,
+                <p className='ml-4'>Typescript, Oracle SQL databases, GitLab, Flyway, Lombok,
                     Hibernate, Spring Cloud Data Flow, Pivotal Tracker, Pivotal Cloud Foundry, Jenkins, Spring JPA</p>
                 <h2 className='font-semibold ml-4 mt-4'>Notable Libraries/Frameworks Used</h2>
                 <p className='ml-4'>Spectator, NgRx, RxJS, AgGrid, JUnit, Mockito</p>
-                <h2 className='font-semibold ml-4 mt-4'>XP (Extreme Programming)</h2>
-                <p className='ml-4'>I have been a part of an XP team since working at CVS. XP is a software development
-                    methodology similar to many other Agile methodologies. Some of the core concepts that I have been
-                    exposed to include TDD (test driven development), Continuous Integration, and paired
-                    programming. Learn more about XP
-                    <a className='underline hover:text-green-600 ml-1'
-                       href='https://en.wikipedia.org/wiki/Extreme_programming'
-                       rel='noreferrer'
-                       target='_blank'>here</a>.
+                <h2 className='font-semibold ml-4 mt-4'>Agile</h2>
+                <p className='ml-4'>I have been a part of an agile team since working at CVS. Some of the core concepts that I have been
+                    exposed to include TDD (test driven development), Continuous Integration/Continuous Deployment, paired
+                    programming and much more.
                 </p>
 
                 <h1 className='font-semibold mt-10'>Accomplishments and Other Roles</h1>
-                <h2 className='font-semibold ml-4 mt-4'>Contribute to Proprietary Angular Component Library</h2>
+                <h2 className='font-semibold ml-4 mt-4'>Contribute to Proprietary Component Library</h2>
                 <p className='ml-4'>I have enjoyed being able to contribute many new features and bugfixes on the CVS
-                    ACL. I have learned a lot about libraries, versioning, and more from this experience!</p>
+                    component library. I have learned a lot about libraries, versioning, and more from this experience!</p>
                 <h2 className='font-semibold ml-4 mt-4'>Diagnose and remove memory leak slowing test execution
                     times</h2>
-                <p className='ml-4'>On a project with over 1500 angular tests, I was able to find and successfully fix a
+                <p className='ml-4'>On a project with over 1500 front-end tests, I was able to find and successfully fix a
                     memory leak improving test run time from 22 minutes to 3 - an <b>86% total reduction in test run
                         time.</b></p>
                 <h2 className='font-semibold ml-4 mt-4'>Accessibility Champion</h2>
@@ -88,7 +83,7 @@ const Cvs = () => {
                     partners. </p>
                 <h2 className='font-semibold ml-4 mt-4'>Conduct Interviews and Provide Mentorship</h2>
                 <p className='ml-4'>I have welcomed many new engineers and teammates and have taken on the role of a
-                    mentor in order to bring them up to speed in respect to code bases, practices, and XP rituals.
+                    mentor in order to bring them up to speed in respect to code bases, practices, and our Agile rituals.
                     Additionally, I have taken the responsibility of an interviewer and have evaluated prospective
                     engineers and designers.</p>
             </div>
