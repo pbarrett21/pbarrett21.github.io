@@ -10,6 +10,13 @@ const Projects = () => {
         <div className={theme === 'dark' ?
             'text-white max-w-full md:max-w-2xl lg:max-w-2xl m-4'
             : 'max-w-full md:max-w-2xl lg:max-w-2xl m-4'}>
+            <ProjectCard cardTitle={'2048Clone'}
+                         imgSrc={require('./../../resources/2048clone.jpg').default}
+                         imgAlt={'2048 clone screenshot'}
+                         blurb={'Single-player sliding tile puzzle video game with the goal of reaching a tile of 2048.'}
+                         technologies={['Angular', 'Typescript', 'SCSS', 'HTML']}
+                         learnMorePath={'/2048clone'}
+            />
             <ProjectCard cardTitle={'LouTrails'}
                          imgSrc={require('./../../resources/loutrails.jpg').default}
                          imgAlt={'LouTrails'}

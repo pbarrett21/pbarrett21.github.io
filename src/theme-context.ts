@@ -3,7 +3,7 @@ import React, {SetStateAction} from 'react';
 const defaultValue: {
     theme: string,
     setTheme: React.Dispatch<SetStateAction<string>>
-} = {theme: 'dark', setTheme: () => {}};
+} = {theme: 'light', setTheme: () => {}};
 
 const ThemeContext = React.createContext(defaultValue);
 

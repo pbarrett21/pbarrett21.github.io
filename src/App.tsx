@@ -13,11 +13,12 @@ import ScrollToTop from './scrollToTop';
 import Website from './website/website';
 import ThemeContext from './theme-context';
 import Loutrails from './loutrails/loutrails';
+import Clone2048 from './2048clone/2048clone';
 
 export const RESUME_LINK = 'https://drive.google.com/file/d/1o4OtepvKwc4sjiDFRJwr_DjC9H2G2dNF/view?usp=sharing';
 
 function App() {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('light');
     const value = {theme, setTheme};
 
     return (
@@ -55,6 +56,9 @@ function App() {
                             </Route>
                             <Route exact path="/loutrails">
                                 <Loutrails/>
+                            </Route>
+                            <Route exact path="/2048clone">
+                                <Clone2048/>
                             </Route>
                         </Switch>
                     </div>

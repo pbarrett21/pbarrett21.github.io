@@ -4,7 +4,7 @@ import ThemeContext from '../theme-context';
 
 const Footer = () => {
 
-    const [darkMode, setMode] = useState(true);
+    const [darkMode, setMode] = useState(false);
 
     const links = [
         {
