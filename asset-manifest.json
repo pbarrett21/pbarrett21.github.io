@@ -1,29 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.96c80f23.chunk.css",
-    "main.js": "/static/js/main.0a4c8e3a.chunk.js",
-    "main.js.map": "/static/js/main.0a4c8e3a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e45e8f83.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e45e8f83.js.map",
-    "static/js/2.2cf9d91b.chunk.js": "/static/js/2.2cf9d91b.chunk.js",
-    "static/js/2.2cf9d91b.chunk.js.map": "/static/js/2.2cf9d91b.chunk.js.map",
-    "static/js/3.75a4b0e4.chunk.js": "/static/js/3.75a4b0e4.chunk.js",
-    "static/js/3.75a4b0e4.chunk.js.map": "/static/js/3.75a4b0e4.chunk.js.map",
+    "main.css": "/static/css/main.ad6e5c38.chunk.css",
+    "main.js": "/static/js/main.cb456736.chunk.js",
+    "main.js.map": "/static/js/main.cb456736.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.43e8ef41.js",
+    "runtime-main.js.map": "/static/js/runtime-main.43e8ef41.js.map",
+    "static/js/2.e1c9eb75.chunk.js": "/static/js/2.e1c9eb75.chunk.js",
+    "static/js/2.e1c9eb75.chunk.js.map": "/static/js/2.e1c9eb75.chunk.js.map",
+    "static/js/3.54d50622.chunk.js": "/static/js/3.54d50622.chunk.js",
+    "static/js/3.54d50622.chunk.js.map": "/static/js/3.54d50622.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.96c80f23.chunk.css.map": "/static/css/main.96c80f23.chunk.css.map",
-    "static/js/2.2cf9d91b.chunk.js.LICENSE.txt": "/static/js/2.2cf9d91b.chunk.js.LICENSE.txt",
+    "static/css/main.ad6e5c38.chunk.css.map": "/static/css/main.ad6e5c38.chunk.css.map",
+    "static/js/2.e1c9eb75.chunk.js.LICENSE.txt": "/static/js/2.e1c9eb75.chunk.js.LICENSE.txt",
     "static/media/2048clone.jpg": "/static/media/2048clone.1cb051a5.jpg",
+    "static/media/aestheticAnimations.mp4": "/static/media/aestheticAnimations.5ccd23aa.mp4",
+    "static/media/aestheticgif.gif": "/static/media/aestheticgif.1b2f15f1.gif",
     "static/media/cvs-health-logo-stacked.png": "/static/media/cvs-health-logo-stacked.c78149f9.png",
     "static/media/dark-thick.png": "/static/media/dark-thick.88bdbded.png",
     "static/media/light-thick.png": "/static/media/light-thick.c59f33c7.png",
     "static/media/loutrails.jpg": "/static/media/loutrails.6cf0ee60.jpg",
+    "static/media/meAndMalcolm.jpg": "/static/media/meAndMalcolm.830dcab3.jpg",
     "static/media/uk-logo.jpeg": "/static/media/uk-logo.56a78bea.jpeg",
     "static/media/websitejpg.jpeg": "/static/media/websitejpg.d80a8951.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e45e8f83.js",
-    "static/js/2.2cf9d91b.chunk.js",
-    "static/css/main.96c80f23.chunk.css",
-    "static/js/main.0a4c8e3a.chunk.js"
+    "static/js/runtime-main.43e8ef41.js",
+    "static/js/2.e1c9eb75.chunk.js",
+    "static/css/main.ad6e5c38.chunk.css",
+    "static/js/main.cb456736.chunk.js"
   ]
 }
