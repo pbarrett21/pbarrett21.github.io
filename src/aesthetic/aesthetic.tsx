@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import GoToButton from '../go-to-button/goToButton'
 import ThemeContext from '../theme-context'
+import './aesthetic-styles.scss'
 
 const Aesthetic = () => {
     const theme = useContext(ThemeContext).theme
@@ -13,59 +14,70 @@ const Aesthetic = () => {
                     : 'w-full md:max-w-2xl lg:max-w-2xl'
             }
         >
-            <div className='w-full flex loutrails-gradient'>
+            <div className='w-full flex aesthetic-gradient'>
                 <h1 className='head-container-website md:ml-16 md:text-4xl'>
                     Aesthetic
                 </h1>
             </div>
+            <div className='flex flex-column justify-center p-4'>
+                <video className='max-h-96' controls autoPlay loop>
+                    <source
+                        src={
+                            require('../resources/aestheticAnimations.mp4')
+                                .default
+                        }
+                        type='video/mp4'
+                    />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <div className='m-4'>
                 <p className='font-semibold'>
-                    I decided to create Aesthetic as a challenge to myself to
-                    recreate the
-                    <a
-                        className='underline hover:text-green-600 ml-1 mr-1'
-                        href='https://play2048.co/'
-                        rel='noreferrer'
-                        target='_blank'
-                    >
-                        original 2048 game
-                    </a>
-                    to the best of my ability. It has been a good opportunity to
-                    work with some fairly complicated multi-dimensional arrays,
-                    to capture user input via keyboard or mobile swipe gestures,
-                    to create a responsive experience for different screen
-                    sizes, and more.
+                    I decided to create Aesthetic as an experiment in creating a
+                    responsive, e-commerce style website that utilizes many
+                    images, animations, and shifting layouts. It was a great
+                    opportunity to learn more about image optimization and the
+                    GSAP library.
                 </p>
 
                 <h1 className='font-semibold mt-10'>Technologies</h1>
                 <p className='ml-4'>
-                    Angular, Typescript, SCSS, HTML, Netlify CMS
+                    React, Typescript, GSAP, Vite, CSS, HTML, Netlify CMS
                 </p>
 
                 <h1 className='font-semibold mt-10'>Noteworthy</h1>
                 <p className='ml-4'>
-                    This was my first time trying to recreate a video game. I
-                    had to study the mechanics of the game in-depth in order to
-                    capture all of the requirements for creating a clone of it.
-                    I gained an appreciation for the finer details of how the
-                    game tiles merge upon attempting to implement the same logic
-                    in my version of the game. This puzzle game was a puzzling
-                    task to recreate at times when considering all of the
-                    different game states, possible moves, game-win or game-loss
-                    scenarios, and edge cases. I think this project was a good
-                    refresher on matrix operations, project structure design,
-                    styling and collecting user input.
+                    This was also my first serious project using Vite, which is
+                    a local development server that ships with a variety of
+                    features to improve development experience. In particular,
+                    Vite's Hot Module Replacement feature was the most polished
+                    implementation of HMR I've seen yet and dev times were
+                    greatly increased as a result. I would say that Vite is a
+                    great solution for small projects like this one.
+                </p>
+                <p className='ml-4 mt-2'>
+                    In addition to Vite, this was also my first real experience
+                    in using the animation library GSAP. I found it to be very
+                    feature rich and fairly easy to use. Organizing and creating
+                    effects was made simple by using GSAP's 'timeline' method.
+                    In the past, I've always used the vanilla CSS methods to
+                    create animations, which has given me a strong foundation.
+                    However, I believe I'll be using tools like GSAP in the
+                    future more often to simplify the dev process.
                 </p>
                 <p className='ml-4 mt-2'>
                     Moving forward, I would look to improve this project by
-                    incorporating the same animations that were used in the
-                    original game.
+                    fleshing out the website more. My initial goal was to work
+                    with animations and to improve my CSS skills, and I believe
+                    I achieved that. However, I didn't decide to add anything
+                    beyond the landing screen, leading to some buttons in the
+                    menus being unusable.
                 </p>
 
                 <div className='flex justify-center mt-4'>
                     <a
                         className='flex'
-                        href='https://2048gameclone.netlify.app/'
+                        href='https://stupendous-basbousa-c822a4.netlify.app/'
                         rel='noreferrer'
                         target='_blank'
                     >
@@ -76,7 +88,7 @@ const Aesthetic = () => {
                 <div className='flex justify-center mt-4'>
                     <a
                         className='flex'
-                        href='https://github.com/pbarrett21/2048clone'
+                        href='https://github.com/pbarrett21/aesthetic'
                         rel='noreferrer'
                         target='_blank'
                     >
