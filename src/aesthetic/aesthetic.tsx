@@ -47,8 +47,8 @@ const Aesthetic = () => {
 
                 <h1 className='font-semibold mt-10'>Noteworthy</h1>
                 <p className='ml-4'>
-                    This was also my first serious project using Vite, which is
-                    a local development server that ships with a variety of
+                    This was my first serious project using Vite, which is a
+                    local development server that ships with a variety of
                     features to improve development experience. In particular,
                     Vite's Hot Module Replacement feature was the most polished
                     implementation of HMR I've seen yet and dev times were
