@@ -22,7 +22,12 @@ const Cvs = () => {
                     have grown significantly during that time. I have enjoyed
                     being able to participate and contribute at every stage of
                     the product lifecycle from initial planning all the way to
-                    delivering MVP.
+                    delivering MVP. I play a pivotal role in driving my team's
+                    success - I have led as anchor engineer on several teams,
+                    driven integrations with other products or tools, become a
+                    subject matter expert with respect to multiple tools,
+                    services or technologies, and have successfully solved
+                    mission-critical bugs in production and more!
                 </p>
 
                 <h1 className='font-semibold mt-10'>
@@ -32,9 +37,10 @@ const Cvs = () => {
                     Technologies and Tools Used
                 </h2>
                 <p className='ml-4'>
-                    Typescript, Oracle SQL databases, GitLab, Flyway, Lombok,
-                    Hibernate, Spring Cloud Data Flow, Pivotal Tracker, Pivotal
-                    Cloud Foundry, Jenkins, Spring JPA
+                    React, Angular, Typescript, SQL databases, Docker,
+                    Dynatrace, Cypress, Jasmine, GitLab, Flyway, Lombok,
+                    Hibernate, Spring Cloud Data Flow, Pivotal Cloud Foundry,
+                    Jenkins, Spring JPA
                 </p>
                 <h2 className='font-semibold ml-4 mt-4'>
                     Notable Libraries/Frameworks Used
@@ -54,14 +60,32 @@ const Cvs = () => {
                 <h1 className='font-semibold mt-10'>
                     Accomplishments and Other Roles
                 </h1>
-                <h2 className='font-semibold ml-4 mt-4'>
-                    Contribute to Proprietary Component Library
-                </h2>
+                <h2 className='font-semibold ml-4 mt-4'>Anchor Engineer</h2>
                 <p className='ml-4'>
-                    I have enjoyed being able to contribute many new features
-                    and bugfixes on the CVS component library. I have learned a
-                    lot about libraries, versioning, and more from this
-                    experience!
+                    I have had the privilege to serve as 'anchor' engineer on
+                    several products at CVS. The anchor engineer is a concept
+                    within XP flavor of Agile and operates similarly to a
+                    Technical Lead, with some key differences.
+                    <a
+                        className='underline hover:text-green-600 ml-1 mr-1'
+                        href='https://enfuse.io/what-does-it-mean-to-be-an-anchor/'
+                        rel='noreferrer'
+                        target='_blank'
+                    >
+                        This website
+                    </a>
+                    describes the role of an anchor engineer very well: "...an
+                    anchor bridges the gap between product/business and the
+                    technical team by being an excellent ambassador. They help
+                    arbitrate and make team decisions, act as a funnel for
+                    incoming requests and they mentor team members to become
+                    anchors. They are technically excellent and socially adept."
+                    Some of the key responsibilities of an achor include:
+                    mentorship, product planning, facilitating story/ticket
+                    creation, discussion of implementation options with fellow
+                    engineers, roadmapping with business partners, protecting
+                    the team from unreasonable timelines/interruptions/etc,
+                    addressing blockers, and coding.
                 </p>
                 <h2 className='font-semibold ml-4 mt-4'>
                     Diagnose and remove memory leak slowing test execution times
@@ -71,6 +95,19 @@ const Cvs = () => {
                     find and successfully fix a memory leak improving test run
                     time from 22 minutes to 3 - an{' '}
                     <b>86% total reduction in test run time.</b>
+                </p>
+                <h2 className='font-semibold ml-4 mt-4'>
+                    Led Integration Efforts
+                </h2>
+                <p className='ml-4'>
+                    I have led various integration efforts. One recent notable
+                    instance was transitioning our monitoring and healthcheck
+                    software from Dynatrace to AppDynamics. This effort involved
+                    cataloging must-have features, organizing meetings with SMEs
+                    and other technical teams, creating technical roadmaps to
+                    prevent loss of monitoring, translating existing monitoring
+                    scripts from JSON to Selenium, configuring dashboards for
+                    business use, and more.
                 </p>
                 <h2 className='font-semibold ml-4 mt-4'>
                     Accessibility Champion
@@ -109,6 +146,15 @@ const Cvs = () => {
                     . Implementing this change involved work spanning from
                     configuration on the front end to the back end as well as
                     SSO setup and more. This was another great learning
+                    experience!
+                </p>
+                <h2 className='font-semibold ml-4 mt-4'>
+                    Contribute to Proprietary Component Library
+                </h2>
+                <p className='ml-4'>
+                    I have enjoyed being able to contribute many new features
+                    and bugfixes on the CVS component library. I have learned a
+                    lot about libraries, versioning, and more from this
                     experience!
                 </p>
                 <h2 className='font-semibold ml-4 mt-4'>Give Presentations</h2>
